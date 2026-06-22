@@ -23,3 +23,9 @@ Ha a szerelvény épp nincs forgalomban, a fejlesztői demónézet a `?demo=1` q
 npm run build
 npm run preview
 ```
+
+## GitHub Pages
+
+A `main` ágra történő push automatikusan buildeli és publikálja az oldalt a GitHub Pagesre. A repository **Settings → Pages → Build and deployment → Source** beállításánál a **GitHub Actions** lehetőséget kell kiválasztani.
+
+Publikus cím: `https://erikm0.github.io/legkondis-hev/`
