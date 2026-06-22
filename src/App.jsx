@@ -405,7 +405,7 @@ export default function App() {
       <section className="map-panel" aria-label="A H5 HÉV térképe">
         <div className="map-overlay-title">
           <span className="route-badge large">H5</span>
-          <div><strong>Szentendrei HÉV</strong><small>{vehicles.length} szerelvény élőben</small></div>
+          <div><strong>Szentendrei HÉV</strong></div>
         </div>
         <MapContainer
           center={DEFAULT_CENTER}
@@ -456,12 +456,6 @@ export default function App() {
             Kiválasztott szerelvény követése
           </button>
         )}
-        <div className="map-legend">
-          <span className="legend-line" /> H5 vonala
-          <span className="legend-dot" /> {vehicles.length} élő szerelvény
-          {vehicle && <><span className="legend-dot target" /> kiemelt</>}
-          {extraHighlightedIds.length > 0 && <><span className="legend-dot extra" /> {extraHighlightedIds.length} plusz</>}
-        </div>
         <div className="mobile-hint"><ArrowDown size={16} /> Húzd le a térképhez</div>
       </section>
     </main>
